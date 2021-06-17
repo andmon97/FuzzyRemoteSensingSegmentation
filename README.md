@@ -1,4 +1,4 @@
-# Fuzzy Rules for Remotely Sensed Images Segmentation
+# Fuzzy Semantic Segmentation of Remotely Sensed Images 
 
 Segmentation of remotely sensed images is a complicated task because the images do not depict well-defined objects.
 To overcome this problem, fuzzy logic is really useful as it allows to classify these objects with a degree of uncertainty. 
