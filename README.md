@@ -7,3 +7,10 @@ In particular, an Adaptive Neuro Fuzzy Inference System (ANFIS), is useful for e
 We use this approach for segmenting remotely sensed images into four different classes: Building, Road, Vegetation and Water.
 
 This work is part of the Computer Vision exam at University of Bari "Aldo Moro".
+
+****
+### Repository content
+
+- Folder 'ANFIS-imgSatellitari' contains the ANFIS code (to train and test the model)
+- Folder 'preprocessing' contains the original dataset, the pixel dataset and the scripts to generate it
+- Folder 'notebook' contain the notebook that show the train of the model, and also the model that shows some results of the semantic classification. If you want to execute it in Google Colab, please copy the folder  'ANFIS-imgSatellitari' in the 'MyDrive' folder of your Google Drive. 
