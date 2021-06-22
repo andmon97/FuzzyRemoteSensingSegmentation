@@ -15,4 +15,4 @@ This work is part of the Computer Vision exam at University of Bari "Aldo Moro".
 
 - Folder 'ANFIS-imgSatellitari' contains the ANFIS code (to train and test the model)
 - Folder 'preprocessing' contains the original dataset, the pixel dataset and the scripts to generate it
-- Folder 'notebook' contain the notebook that show the train of the model, and also the model that shows some results of the semantic classification. If you want to execute it in Google Colab, please copy the folder  'ANFIS-imgSatellitari' in the 'MyDrive' folder of your Google Drive. 
+- Folder 'notebook' contains the notebooks, one shows the train of the model, and another some results of the semantic classification. If you want to execute it in Google Colab, please copy the folder  'ANFIS-imgSatellitari' in the 'MyDrive' folder of your Google Drive. 
