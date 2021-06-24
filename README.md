@@ -14,9 +14,9 @@ This work is part of the Computer Vision exam at University of Bari "Aldo Moro".
 ****
 ### Repository content
 
-- Folder 'ANFIS-imgSatellitari' contains the ANFIS code (to train and test the model)
-- Folder 'preprocessing' contains the original dataset, the pixel dataset and the scripts to generate it
-- Folder 'notebook' contains the notebooks, one shows the train of the model, and another some results of the semantic classification. If you want to execute it in Google Colab, please copy the folder  'ANFIS-imgSatellitari' in the 'MyDrive' folder of your Google Drive.
+- Folder 'ANFIS-imgSatellitari' contains the ANFIS code (to train and test the model).
+- Folder 'preprocessing' contains the original dataset, the pixel dataset and the scripts to generate it.
+- Folder 'notebook' contains the notebooks, one shows the train of the model, and another (accessible on Google Colab from the button at the top) some results of the semantic classification.
 - Folder 'report' contains the final report. 
 
 ****
@@ -47,4 +47,4 @@ This work is part of the Computer Vision exam at University of Bari "Aldo Moro".
 
 [13] A. Kendall V. Badrinarayanan and R. Cipolla. Segnet: A deep convolutional encoder-decoder architecture for image segmentation. IEEE Trans. Pattern Anal. Mach. Intell., 39(12):2481–2495, 2017.
 
-[14] Y. Bengio Y. Lecun, L. Bottou and P. Haffner. Gradientbased learning applied to document recognition. Proc. IEEE, 86(1):2278–2324, 1998.
+[14] Y. Bengio Y. Lecun, L. Bottou and P. Haffner. Gradient based learning applied to document recognition. Proc. IEEE, 86(1):2278–2324, 1998.
