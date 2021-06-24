@@ -1,4 +1,4 @@
-# Fuzzy Semantic Segmentation of Remotely Sensed Images
+# Segmentation of Remotely Sensed Images with Fuzzy Logic 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Pq1CU0vskGq2A5hyANWM7gGJZ_KHqxvM?usp=sharing)
 
 Segmentation of remotely sensed images is a complicated task because the images do not depict well-defined objects.
