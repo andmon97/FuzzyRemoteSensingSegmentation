@@ -4,7 +4,7 @@ import torch
 import pandas as pd
 from sklearn.model_selection import train_test_split, StratifiedKFold
 from training import train_model
-from testModel import test_model
+from test import test_model
 import anfis
 from membership import *
 from utility import load_model, plot_import, split_dataset
