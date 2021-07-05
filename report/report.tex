@@ -149,7 +149,7 @@ where $\left\{a_{i}, c_{i}\right\}$ is the parameter set. Parameters in this lay
 Every node in the \textbf{layer 2} is a circle node labeled $\Pi$ which multiplies the incoming signals and sends the
 product out. Each node output represents the firing strength of a rule. In this layer a generalized AND function is used as node function.
 
-In the \textbf{layer 3} every node is a circle node labeled $\mathrm{N}$. The $i$ -th node calculates the ratio of the $i$ -th rule's firing strength to the sum of all rules' firing strengths (also called normalized firing strengths):
+In the \textbf{layer 3} every node is a circle node labeled $\mathrm{N}$. The $i$-th node calculates the ratio of the $i$-th rule's firing strength to the sum of all rules' firing strengths (also called normalized firing strengths):
 $$
 \bar{w}_{i}=\frac{w_{i}}{w_{1}+w_{2}}, i=1,2 .
 $$
@@ -231,7 +231,7 @@ The following couple of images represents a gray scale image on the left, and th
 %-------------------------------------------------------------------------
 \subsection{Train and Test}
 
-Three different settings for the ANFIS training were tried in the experiment. Since it is a Neural Network with an offline batch learning, it is quite slow in the training. What must be tried in this phase is above all to understand what is the optimal number of fuzzy sets for ANFIS. This parameter must be chosen, it is not a system output.
+Three different settings for the ANFIS training were tried in the experiment. What must be tried in this phase is above all to understand what is the optimal number of fuzzy sets for ANFIS. This parameter must be chosen, it is not a system output.
 
 Three such experiments have been done. The training was done by selecting 2 fuzzy sets as parameters, then 3 and finally 4. Furthermore, all three experiments were conducted by choosing to train the ANFIS with 20 epochs and 32 of batch size.
 As fuzzy sets grow, the number of fuzzy rules grows. Having $n$ variables and $m$ fuzzy sets, the number of rules will be equal to $n^{m}$. For this reason, in the three configurations there are respectively 16, 64 and 256 rules.
@@ -253,7 +253,7 @@ As the complexity of the system increases, so does the time needed to train the 
 \label{table:2}
 \end{table}
 
-In the experiments a k-fold cross validation is used, with a train/test split of the dataset of 70/30\%. In the three configurations the overall accuracy of the system is improved as the number of fuzzy sets increases, as shown in the following table. 
+In the experiments a stratified train/test split validation is used, with a train/test split of the dataset of 70/30\%. In the three configurations the overall accuracy of the system is improved as the number of fuzzy sets increases, as shown in the following table. 
 \begin{table}[h!]
 \centering
 \begin{tabular}{||c c||} 
