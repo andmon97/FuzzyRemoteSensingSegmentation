@@ -75,7 +75,7 @@ def get_data_one_hot(X_train, y_train, X_val, y_val, batch_size):
 
     train_dataset = ClassifierDataset(torch.from_numpy(X_train).float(), torch.from_numpy(y_train).long())
     x = torch.Tensor(X_train)
-    y = make_one_hot(y_train, num_categories=4)
+    y = make_one_hot(y_train, num_categories=6)
     td = TensorDataset(x, y)
 
     if len(X_val) == 0:

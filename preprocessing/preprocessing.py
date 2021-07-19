@@ -14,15 +14,17 @@ countBuilding = 0
 countRoad = 0
 countVegetation = 0
 countWater = 0
+countBareSoil = 0
+countPavement = 0
 
 imagesExt = '.jpg'
 labelsExt = '.png'
 i=0
 # Opening file
-fileImgs = open('WHDLD/reduced4ClassV3/labels.txt', 'r')
+fileImgs = open('WHDLD/reduced6ClassV1/labels.txt', 'r')
 
 # Writing to file
-with open('pixelClassificationDataset/reducedV3.csv', mode='w',newline='') as x_file:
+with open('WHDLD/newReduced.csv', mode='w',newline='') as x_file:
     x_writer = csv.writer(x_file, delimiter=';')
 
     for line in fileImgs:
@@ -37,8 +39,8 @@ with open('pixelClassificationDataset/reducedV3.csv', mode='w',newline='') as x_
         imgLabs = (cv2.imread(os.path.join(labeledImagesPath, imgName + labelsExt), cv2.IMREAD_COLOR))
 
         grayScaleImg = cv2.imread(os.path.join(imagesPath, imgName + imagesExt), cv2.IMREAD_GRAYSCALE)
-        blurImg = cv2.GaussianBlur(grayScaleImg, (9, 9), 0)
-        imgEntropy = entropy(blurImg, disk(5))
+        #blurImg = cv2.GaussianBlur(grayScaleImg, (9, 9), 0)
+        imgEntropy = entropy(grayScaleImg, disk(3))
 
         for y in range(height):
             for x in range(width):
@@ -57,15 +59,20 @@ with open('pixelClassificationDataset/reducedV3.csv', mode='w',newline='') as x_
                 if redLab == 255 and greenLab == 0 and blueLab == 0:
                     label = 0 # building
                     countBuilding += 1
-                elif (redLab == 255 and greenLab == 255 and blueLab == 0) \
-                        or (redLab == 192 and greenLab == 192 and blueLab == 0):
+                elif redLab == 255 and greenLab == 255 and blueLab == 0:
                     label = 1  # road
                     countRoad += 1
+                elif redLab == 192 and greenLab == 192 and blueLab == 0:
+                    label = 2 # pavement
+                    countPavement += 2
                 elif redLab == 0 and greenLab == 255 and blueLab == 0:
-                    label = 2  # vegetation
+                    label = 3  # vegetation
                     countVegetation += 1
+                elif redLab == 128 and greenLab == 128 and blueLab == 128:
+                    label = 4
+                    countBareSoil += 1
                 else:
-                    label = 3  # water
+                    label = 5  # water
                     countWater += 1
 
                 # pixel values from entropy "parallel" images
@@ -80,9 +87,11 @@ with open('pixelClassificationDataset/reducedV3.csv', mode='w',newline='') as x_
 fileImgs.close()
 
 print("% Pixel per class: ")
-print("Building ", countBuilding/(countBuilding+countRoad+countVegetation+countWater))
-print("Road ", countRoad/(countBuilding+countRoad+countVegetation+countWater))
-print("Vegetation ", countVegetation/(countBuilding+countRoad+countVegetation+countWater))
-print("Water ", countWater/(countBuilding+countRoad+countVegetation+countWater))
+print("Building ", countBuilding/(countBuilding+countRoad+countVegetation+countWater+countBareSoil+countPavement))
+print("Road ", countRoad/(countBuilding+countRoad+countVegetation+countWater+countBareSoil+countPavement))
+print("Pavement ", countPavement/(countBuilding+countRoad+countVegetation+countWater+countBareSoil+countPavement))
+print("Vegetation ", countVegetation/(countBuilding+countRoad+countVegetation+countWater+countBareSoil+countPavement))
+print("Bare Soil ", countBareSoil/(countBuilding+countRoad+countVegetation+countWater+countBareSoil+countPavement))
+print("Water ", countWater/(countBuilding+countRoad+countVegetation+countWater+countBareSoil+countPavement))
 
 
