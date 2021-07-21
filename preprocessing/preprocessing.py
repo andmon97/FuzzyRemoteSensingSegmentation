@@ -21,7 +21,7 @@ imagesExt = '.jpg'
 labelsExt = '.png'
 i=0
 # Opening file
-fileImgs = open('WHDLD/reduced6ClassV2/labels.txt', 'r')
+fileImgs = open('WHDLD/reduced6ClassV3/labels.txt', 'r')
 
 # Writing to file
 with open('WHDLD/newReduced.csv', mode='w',newline='') as x_file:
