@@ -14,10 +14,11 @@ This work is part of the Computer Vision exam at University of Bari "Aldo Moro".
 ****
 ### Repository content
 
-- Folder 'ANFIS-imgSatellitari' contains the ANFIS code (to train and test the model).
+- Folder 'ANFIS-imgSatellitari' contains the ANFIS code (to train and test the model). There is also the folder 'model'
+  which contains the ANFIS trained models (0 was used for the exam and the others are the model for the 6-class segmentation with 2, 3, 4 Fuzzy Sets per variable)
 - Folder 'preprocessing' contains the original dataset, the pixel dataset and the scripts to generate it.
-- Folder 'notebook' contains the notebooks, one shows the train of the model, and another (accessible on Google Colab from the button at the top) some results of the semantic classification.
-- Folder 'report' contains the final report. 
+- Folder 'notebook' contains the notebooks with the training for the 6-class segmentation.
+- Folder 'report' contains the final report for the exam. 
 
 Note that the report shows the segmentation with 4 classes: a subsequent work extended the segmentation to six classes.
 
