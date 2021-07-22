@@ -19,6 +19,8 @@ This work is part of the Computer Vision exam at University of Bari "Aldo Moro".
 - Folder 'notebook' contains the notebooks, one shows the train of the model, and another (accessible on Google Colab from the button at the top) some results of the semantic classification.
 - Folder 'report' contains the final report. 
 
+Note that the report shows the segmentation with 4 classes: a subsequent work extended the segmentation to six classes.
+
 ****
 ### References
 
