@@ -5,7 +5,7 @@ Segmentation of remotely sensed images is a complicated task because the images 
 To overcome this problem, fuzzy logic is really useful as it allows to classify these objects with a degree of uncertainty. 
 
 In particular, an Adaptive Neuro Fuzzy Inference System (ANFIS), is useful for extracting fuzzy rules for pixel classification of images. 
-This approach is used for segmenting remotely sensed images into four different classes: Building (Red), Road (Yellow), Vegetation (Green) and Water (Blue).
+This approach is used for segmenting remotely sensed images into six different classes: Building (Red), Road (Yellow), Pavement (Darker Yellow), Vegetation (Green), Bare Soil (Grey) and Water (Blue).
 
 ![](images/image.jpg)
 
