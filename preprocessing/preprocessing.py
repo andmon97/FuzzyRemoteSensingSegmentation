@@ -21,10 +21,10 @@ imagesExt = '.jpg'
 labelsExt = '.png'
 i=0
 # Opening file
-fileImgs = open('WHDLD/reduced6ClassV3/labels.txt', 'r')
+fileImgs = open('WHDLD/reducedTopClass/labels.txt', 'r')
 
 # Writing to file
-with open('WHDLD/newReduced.csv', mode='w',newline='') as x_file:
+with open('WHDLD/reducedTC.csv', mode='w',newline='') as x_file:
     x_writer = csv.writer(x_file, delimiter=';')
 
     for line in fileImgs:
@@ -64,7 +64,7 @@ with open('WHDLD/newReduced.csv', mode='w',newline='') as x_file:
                     countRoad += 1
                 elif redLab == 192 and greenLab == 192 and blueLab == 0:
                     label = 2 # pavement
-                    countPavement += 2
+                    countPavement += 1
                 elif redLab == 0 and greenLab == 255 and blueLab == 0:
                     label = 3  # vegetation
                     countVegetation += 1

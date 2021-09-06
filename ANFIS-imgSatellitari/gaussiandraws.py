@@ -10,17 +10,17 @@ x_entropy = np.arange(0, 6, 0.001)
 
 # Generate fuzzy membership functions
 #red
-rmf0 = fuzz.membership.gaussmf(x_rgb, -90.43, 118.37)
-rmf1 = fuzz.membership.gaussmf(x_rgb, 183.36, 118.92)
+rmf0 = fuzz.membership.gaussmf(x_rgb, -95.93, 79.70)
+rmf1 = fuzz.membership.gaussmf(x_rgb, 200.32, 107.41)
 #green
-gmf0 = fuzz.membership.gaussmf(x_rgb, -68.45, 69.85)
-gmf1 = fuzz.membership.gaussmf(x_rgb,226.86, 110.04)
+gmf0 = fuzz.membership.gaussmf(x_rgb, -64.37, 93.11)
+gmf1 = fuzz.membership.gaussmf(x_rgb,234.87, 114.13)
 #blue
-bmf0 = fuzz.membership.gaussmf(x_rgb, -82.20, 113.18)
-bmf1 = fuzz.membership.gaussmf(x_rgb,204.32, 124.37)
+bmf0 = fuzz.membership.gaussmf(x_rgb, -78.53, 126.86)
+bmf1 = fuzz.membership.gaussmf(x_rgb,214.76, 102.93)
 #entropy
-emf0 = fuzz.membership.gaussmf(x_entropy, 1.008, 2.104)
-emf1 = fuzz.membership.gaussmf(x_entropy, 5.189, 1.576)
+emf0 = fuzz.membership.gaussmf(x_entropy, 0.41, 2.09)
+emf1 = fuzz.membership.gaussmf(x_entropy, 5.09, 1.32)
 
 # Visualize these universes and membership functions
 fig, (ax0, ax1, ax2, ax3) = plt.subplots(nrows=4, figsize=(4, 6))
@@ -28,6 +28,7 @@ fig, (ax0, ax1, ax2, ax3) = plt.subplots(nrows=4, figsize=(4, 6))
 ax0.plot(x_rgb, rmf0, 'r', linewidth=1.5, label='Low ')
 ax0.plot(x_rgb, rmf1, 'g', linewidth=1.5, label='High ')
 ax0.set_title('Red')
+ax0.legend()
 
 
 ax1.plot(x_rgb, gmf0, 'r', linewidth=1.5 )
@@ -38,10 +39,9 @@ ax2.plot(x_rgb, bmf0, 'r', linewidth=1.5)
 ax2.plot(x_rgb, bmf1, 'g', linewidth=1.5)
 ax2.set_title('Blue')
 
-ax3.plot(x_entropy, emf0, 'r', linewidth=1.5)
-ax3.plot(x_entropy, emf1, 'g', linewidth=1.5)
+ax3.plot(x_entropy, emf0, 'r', linewidth=1.5, label='Low ')
+ax3.plot(x_entropy, emf1, 'g', linewidth=1.5, label='High ')
 ax3.set_title('Entropy')
-ax3.legend([emf0, emf1], ['Low', 'High'])
 
 # Turn off top/right axes
 for ax in (ax0, ax1, ax2, ax3):
