@@ -1,10 +1,9 @@
 # Segmentation of Remotely Sensed Images with Fuzzy Logic 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Pq1CU0vskGq2A5hyANWM7gGJZ_KHqxvM?usp=sharing)
 
-Segmentation of remotely sensed images is a complicated task because the images do not depict well-defined objects.
-To overcome this problem, fuzzy logic is really useful as it allows to classify these objects with a degree of uncertainty. 
+The semantic segmentation of remotely sensed images is a difficult task because the images do not represent well-defined objects. To tackle this task, fuzzy logic represents a valid alternative to convolutional neural networks—especially in the presence of very limited data—, as it allows to classify these objects with a degree of uncertainty. Unfortunately, the rules for doing this have to be defined by hand. To overcome this limitation, in this work we propose to use an adaptive neuro-fuzzy inference system (ANFIS), which automatically infers the fuzzy rules that classify the pixels of the remotely sensed images, thus realizing their semantic segmentation. The resulting fuzzy model guarantees a good level of accuracy
+This model it is also explanatory, since the classification rules produced are similar to the way of thinking of human beings.
 
-In particular, an Adaptive Neuro Fuzzy Inference System (ANFIS), is useful for extracting fuzzy rules for pixel classification of images. 
 This approach is used for segmenting remotely sensed images into six different classes: Building (Red), Road (Yellow), Pavement (Darker Yellow), Vegetation (Green), Bare Soil (Grey) and Water (Blue).
 
 ![](images/exampleSegmentation.png)
