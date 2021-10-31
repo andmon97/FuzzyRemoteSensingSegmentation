@@ -22,12 +22,10 @@ This work is part of the Computer Vision exam at University of Bari "Aldo Moro".
 Note that the report shows the segmentation with 4 classes: a subsequent work extended the segmentation to six classes.
 
 ****
-### Paper
-This work lead to a publication of a conference paper. For the experiment cited in this paper the "reducedTopClass" 
-were used, which was built by choosing the top 3 images with the greater number of pixel for each class (so for 6 
-classes there are 18 total images used to compose the pixel dataset).
+### Best Model
+ThFor the experiment cited in this paper the "reducedTopClass" were used, which was built by choosing the top 3 images with the greater number of pixel for each class (so for 6 classes there are 18 total images used to compose the pixel dataset).
 
-The model used for the paper are those that have the words "topClass" in the models folder.
+The best model used for the experiment are those that have the words "topClass" in the models folder.
 
 ****
 ### References
