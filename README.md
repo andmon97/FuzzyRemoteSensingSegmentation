@@ -1,14 +1,19 @@
 # Segmentation of Remotely Sensed Images with an Adaptive Neuro Fuzzy Inference System
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Pq1CU0vskGq2A5hyANWM7gGJZ_KHqxvM?usp=sharing)
 
-The semantic segmentation of remotely sensed images is a difficult task because the images do not represent well-defined objects. To tackle this task, fuzzy logic represents a valid alternative to convolutional neural networks—especially in the presence of very limited data—, as it allows to classify these objects with a degree of uncertainty. Unfortunately, the rules for doing this have to be defined by hand. To overcome this limitation, in this work we propose to use an adaptive neuro-fuzzy inference system (ANFIS), which automatically infers the fuzzy rules that classify the pixels of the remotely sensed images, thus realizing their semantic segmentation. The resulting fuzzy model guarantees a good level of accuracy
-This model it is also explanatory, since the classification rules produced are similar to the way of thinking of human beings.
+The semantic segmentation of remotely sensed images is a difficult task because the images do not represent well-defined objects. To tackle this task, fuzzy logic represents a valid alternative to convolutional neural networks—especially in the presence of very limited data, as it allows to classify these objects with a degree of uncertainty. Unfortunately, the rules for doing this have to be defined by hand. To overcome this limitation, in this work we propose to use an adaptive neuro-fuzzy inference system (ANFIS), which automatically infers the fuzzy rules that classify the pixels of the remotely sensed images, thus realizing their semantic segmentation. The resulting fuzzy model guarantees a good level of accuracy
+This model is also explanatory, since the classification rules produced are similar to the way of thinking of human beings.
 
 This approach is used for segmenting remotely sensed images into six different classes: Building (Red), Road (Yellow), Pavement (Darker Yellow), Vegetation (Green), Bare Soil (Grey) and Water (Blue).
 
 ![](images/exampleSegmentation.png)
 
 This work is part of the Computer Vision exam at University of Bari "Aldo Moro".
+
+****
+### Paper
+
+Moreover, the work led to a [paper](http://ceur-ws.org/Vol-3074/paper15.pdf) that was presented at the [13th International Workshop on Fuzzy Logic and Applications (WILF2021)](http://ceur-ws.org/Vol-3074/).
 
 ****
 ### Repository content
