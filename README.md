@@ -15,6 +15,16 @@ This work is part of the Computer Vision exam at University of Bari "Aldo Moro".
 
 Moreover, the work led to a [paper](http://ceur-ws.org/Vol-3074/paper15.pdf) that was presented at the [13th International Workshop on Fuzzy Logic and Applications (WILF2021)](http://ceur-ws.org/Vol-3074/).
 
+#### BibTeX Citation
+```
+@inproceedings{inproceedings,
+author = {Castellano, Giovanna and Castiello, Ciro and Montemurro, Andrea and Vessio, Gennaro and Zaza, Gianluca},
+year = {2021},
+month = {12},
+pages = {},
+title = {Segmentation of remotely sensed images with a neuro-fuzzy inference system}
+}
+```
 ****
 ### Repository content
 
