@@ -11,21 +11,6 @@ This approach is used for segmenting remotely sensed images into six different c
 This work is part of the Computer Vision exam at University of Bari "Aldo Moro".
 
 ****
-### Paper
-
-Moreover, the work led to a [paper](https://www.researchgate.net/publication/358021524_Segmentation_of_remotely_sensed_images_with_a_neuro-fuzzy_inference_system) that was presented at the [13th International Workshop on Fuzzy Logic and Applications (WILF2021)](http://ceur-ws.org/Vol-3074/).
-
-#### BibTeX Citation
-```
-@inproceedings{inproceedings,
-author = {Castellano, Giovanna and Castiello, Ciro and Montemurro, Andrea and Vessio, Gennaro and Zaza, Gianluca},
-year = {2021},
-month = {12},
-pages = {},
-title = {Segmentation of remotely sensed images with a neuro-fuzzy inference system}
-}
-```
-****
 ### Repository content
 
 - Folder 'ANFIS-imgSatellitari' contains the ANFIS code (to train and test the model). There is also the folder 'model'
@@ -42,6 +27,22 @@ For the experiment the "reducedTopClass" were used, which was built by choosing 
 The best model used for the experiment are those that have the words "topClass" in the models folder.
 
 ****
+### Paper
+
+Moreover, the work led to a [paper](https://www.researchgate.net/publication/358021524_Segmentation_of_remotely_sensed_images_with_a_neuro-fuzzy_inference_system) that was presented at the [13th International Workshop on Fuzzy Logic and Applications (WILF2021)](http://ceur-ws.org/Vol-3074/).
+
+#### BibTeX Citation
+```
+@inproceedings{inproceedings,
+author = {Castellano, Giovanna and Castiello, Ciro and Montemurro, Andrea and Vessio, Gennaro and Zaza, Gianluca},
+year = {2021},
+month = {12},
+pages = {},
+title = {Segmentation of remotely sensed images with a neuro-fuzzy inference system}
+}
+```
+****
+
 ### References
 
 [1] Diederich J. Andrews, R. and A. B. Tickle. Survey and critique of techniques for extracting rules form trained artificial neural networks. Knowledge-based Systems, 8:373–389,1995.
