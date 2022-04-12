@@ -18,8 +18,6 @@ This work is part of the Computer Vision exam at University of Bari "Aldo Moro".
 - Folder 'preprocessing' contains the original dataset, the pixel dataset and the scripts to generate it.
 - The notebook "Anfis_training" is the notebook with used for the training of the 6-class segmentation model.
 
-Note that the report shows the segmentation with 4 classes: a subsequent work extended the segmentation to six classes.
-
 ****
 ### Best Model
 For the experiment the "reducedTopClass" were used, which was built by choosing the top 3 images with the greater number of pixel for each class (so for 6 classes there are 18 total images used to compose the pixel dataset).
@@ -45,29 +43,42 @@ title = {Segmentation of remotely sensed images with a neuro-fuzzy inference sys
 
 ### References
 
-[1] Diederich J. Andrews, R. and A. B. Tickle. Survey and critique of techniques for extracting rules form trained artificial neural networks. Knowledge-based Systems, 8:373–389,1995.
+[1]R. Wang, J. A. Gamon, Remote sensing of terrestrial plant biodiversity, Remote Sensing ofEnvironment 231 (2019) 111218.
 
-[2] J.R. Jensenr F. Qiu. Opening the black box of neural networks for remote sensing image classification. International Journal of Remote Sensing, 25(9):1749–1768, 2004.
-[3] Demuth H. B. Hagan, M. T. and M. Beale. Neural network design. (Boston, MA: PWS, 1996.
+[2]M. Weiss, F. Jacob, G. Duveiller, Remote sensing for agricultural applications: A meta-review, Remote Sensing of Environment 236 (2020) 111402.
 
-[4] Stingchombe M. Hornik, K. and H. Whitee. Multilayer feed-forward networks are universal approximators. Neural Networks, 2(1):359–366, 1989.
+[3]X. Yuan, J. Shi, L. Gu, A review of deep learning methods for semantic segmentation ofremote sensing imagery, Expert Systems with Applications (2020) 114417.
 
-[5] E. Shelhamer J. Long and T. Darrell. Fully convolutional networks for semantic segmentation, 2015. Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), pp. 3431-3440.
+[4]O. Ronneberger, P. Fischer, T. Brox, U-net: Convolutional networks for biomedical imagesegmentation, in: International Conference on Medical image computing and computer-assisted intervention, Springer, 2015, pp. 234–241.
 
-[6] Jyh-Shing R Jang. Anfis adaptive-network-based fuzzy inference system. IEEE Transactions on Systems Man and Cybernetics, 23(3):665–685, 1993.
+[5]V. Badrinarayanan, A. Kendall, R. Cipolla, Segnet: A deep convolutional encoder-decoderarchitecture for image segmentation, IEEE Trans. on PAMI 39 (2017) 2481–2495.
 
-[7] Fausett L. Fundamentals of neural networks: Architectures, algorithms, and applications. (Englewood Cliffs, NJ: Prentice Hall), 1994.
+[6]R. Dong, X. Pan, F. Li, Denseu-net-based semantic segmentation of small objects in urbanremote sensing images, IEEE Access 7 (2019) 65347–65356.
 
-[8] George C. Stockman Linda G. Shapiro. Computer vision. New Jersey, Prentice-Hall, pages 279–375, 2001.
+[7]Y. Yi, Z. Zhang, W. Zhang, C. Zhang, W. Li, T. Zhao, Semantic segmentation of urbanbuildings from vhr remote sensing imagery using a deep convolutional neural network,Remote sensing 11 (2019) 1774.
 
-[9] G. W. Taylor M. D. Zeiler and R. Fergus. Adaptive deconvolutional networks for mid and high level feature learning. Proc. Int. Conf. Comput. Vis., pages 2018–2025, 2011.
+[8]J. M. A. Moral, C. Castiello, L. Magdalena, C. Mencar, Explainable Fuzzy Systems: Pavingthe way from Interpretable Fuzzy Systems to Explainable AI Systems, Springer, 2021.
 
-[10] Klawoon F. Nauck, D. and R Kruse. Foundation of neuro-fuzzy system. (Chichester: John Wiley Sons), 1997.
+[9]G. Casalino, G. Castellano, C. Castiello, V. Pasquadibisceglie, G. Zaza, A fuzzy rule-baseddecision support system for cardiovascular risk assessment, in: International Workshopon Fuzzy Logic and Applications, Springer, 2018, pp. 97–108.
 
-[11] P. Fischer O. Ronneberger and T. Brox. U-net: Convolutional networks for biomedical image segmentation. Proc. Int. Conf. Med. Image Comput. Comput.-Assist. Intervent, pages 234–241, 2015.
+[10]H. Leon-Garza, H. Hagras, A. Peña-Rios, A. Conway, G. Owusu, A big bang-big crunchtype-2 fuzzy logic system for explainable semantic segmentation of trees in satellite imagesusing hsv color space, in: IEEE Int. Conf. on Fuzzy Systems (FUZZ-IEEE), 2020, pp. 1–7.
 
-[12] Yang K. Zhou W. Shao, Z. Evaluation of single-label and multi-label remote sensing image retrieval using a dense labeling dataset. Remote Sensing, 10(6):964, 2018.
+[11]C. Wang, A. Xu, X. Li, Supervised classication high-resolution remote-sensing imagebased on interval type-2 fuzzy membership function, Remote Sensing 10 (2018) 710.
 
-[13] A. Kendall V. Badrinarayanan and R. Cipolla. Segnet: A deep convolutional encoder-decoder architecture for image segmentation. IEEE Trans. Pattern Anal. Mach. Intell., 39(12):2481–2495, 2017.
+[12]K. Shihabudheen, G. N. Pillai, Recent advances in neuro-fuzzy system: A survey,Knowledge-Based Systems 152 (2018) 136–162.
 
-[14] Y. Bengio Y. Lecun, L. Bottou and P. Haffner. Gradient based learning applied to document recognition. Proc. IEEE, 86(1):2278–2324, 1998.
+[13]S. K. Meher, N. S. Kothari, Interpretable rule-based fuzzy elm and domain adaptation forremote sensing image classication, IEEE Trans. on Geoscience and R. Sensing (2020).
+
+[14]Z. Tianyu, J. Xu, Hyperspectral remote sensing image segmentation based on the fuzzydeep convolutional neural network, in: 13th International Congress on Image and SignalProcessing, BioMedical Eng. and Informatics (CISP-BMEI 2020), IEEE, 2020, pp. 181–186.
+
+[15]J.-S. Jang, Ans: adaptive-network-based fuzzy inference system, IEEE Transactions onSystems, Man, and Cybernetics 23 (1993) 665–685.
+
+[16]T. Takagi, M. Sugeno, Fuzzy identication of systems and its applications to modeling andcontrol, IEEE Transactions on Systems, Man, and Cybernetics (1985) 116–132.
+
+[17]J.-S. Jang, C.-T. Sun, Functional equivalence between radial basis function networks andfuzzy inference systems, IEEE Transactions on Neural Networks 4 (1993) 156–159.
+
+[18] M. Brown, C. J. Harris, Neurofuzzy adaptive modelling and control, Prentice Hall, 1994.
+
+[19]Z. Shao, W. Zhou, X. Deng, M. Zhang, Q. Cheng, Multilabel Remote Sensing Image RetrievalBased on Fully Convolutional Network, IEEE Journal of Selected Topics in Applied EarthObservations and Remote Sensing 13 (2020) 318–328.
+
+[20]E. Shelhamer, J. Long, T. Darrell, Fully convolutional networks for semantic segmentation,IEEE Transactions on Pattern Analysis and Machine Intelligence 39 (2017) 640–651.
