@@ -27,7 +27,7 @@ The best model used for the experiment are those that have the words "topClass" 
 ****
 ### Paper
 
-Moreover, the work led to a [paper](https://www.researchgate.net/publication/358021524_Segmentation_of_remotely_sensed_images_with_a_neuro-fuzzy_inference_system) that was presented at the [13th International Workshop on Fuzzy Logic and Applications (WILF2021)](http://ceur-ws.org/Vol-3074/).
+Moreover, the work led to a [paper](https://www.researchgate.net/publication/358021524_Segmentation_of_remotely_sensed_images_with_a_neuro-fuzzy_inference_system) that was presented at the 13th International Workshop on Fuzzy Logic and Applications (WILF2021).
 
 #### BibTeX Citation
 ```
