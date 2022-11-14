@@ -31,12 +31,11 @@ Moreover, the work led to a [paper](https://www.researchgate.net/publication/358
 
 #### BibTeX Citation
 ```
-@inproceedings{inproceedings,
-author = {Castellano, Giovanna and Castiello, Ciro and Montemurro, Andrea and Vessio, Gennaro and Zaza, Gianluca},
-year = {2021},
-month = {12},
-pages = {},
-title = {Segmentation of remotely sensed images with a neuro-fuzzy inference system}
+@inproceedings{castellano2021segmentation,
+  title={Segmentation of remotely sensed images with a neuro-fuzzy inference system.},
+  author={Castellano, Giovanna and Castiello, Ciro and Montemurro, Andrea and Vessio, Gennaro and Zaza, Gianluca},
+  booktitle={WILF},
+  year={2021}
 }
 ```
 ****
